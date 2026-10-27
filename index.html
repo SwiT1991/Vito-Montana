@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="ויטו מונטנה (SwiT) – כל הלינקים: Kick, YouTube, TikTok, Discord">
+<title>Vito Montana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;900&family=Assistant:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a single noir "case file" column — dossier header, then one row per hideout (platform) */
+:root{
+  --ink:#0d0c0b;
+  --paper:#171512;
+  --line:#2e2a24;
+  --gold:#c9a45c;
+  --cream:#efe6d4;
+  --smoke:#9b9283;
+  --blood:#9e2b25;
+  --display:"Frank Ruhl Libre","David",Georgia,serif;
+  --body:"Assistant","Arial Hebrew",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--ink)}
+body{
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(201,164,92,.13), transparent 70%),
+    var(--ink);
+  color:var(--cream);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.55;
+  min-height:100vh;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+  padding-block:40px 56px;
+}
+.wrap{max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+
+/* dossier header */
+.file{
+  border:1px solid var(--line);
+  background:var(--paper);
+  padding:22px 20px 24px;
+  position:relative;
+}
+.file-top{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  font-family:var(--mono);font-size:12px;color:var(--smoke);
+  letter-spacing:.06em;border-bottom:1px dashed var(--line);padding-bottom:12px;
+  direction:rtl;
+}
+.stamp{
+  color:var(--blood);border:2px solid var(--blood);padding:2px 8px;
+  font-family:var(--body);font-weight:800;font-size:13px;letter-spacing:.12em;
+  transform:rotate(-4deg);display:inline-block;
+}
+.mark{
+  width:84px;height:84px;margin:22px auto 6px;border-radius:50%;
+  border:1.5px solid var(--gold);display:grid;place-items:center;
+  font-family:var(--display);font-weight:900;font-size:40px;color:var(--gold);
+  letter-spacing:-.02em;
+  box-shadow:inset 0 0 0 6px var(--paper), inset 0 0 0 7px rgba(201,164,92,.35);
+}
+h1{
+  font-family:var(--display);font-weight:900;text-align:center;
+  font-size:clamp(40px,11vw,54px);line-height:1;margin:10px 0 4px;
+  text-wrap:balance;color:var(--cream);
+}
+.latin{
+  text-align:center;font-family:var(--mono);font-size:13px;color:var(--gold);
+  letter-spacing:.35em;text-transform:uppercase;direction:ltr;
+}
+.tag{
+  text-align:center;color:var(--smoke);margin:14px auto 0;max-width:34ch;
+}
+.facts{
+  margin:20px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;
+  font-size:15px;border-top:1px dashed var(--line);padding-top:14px;
+}
+.facts dt{color:var(--smoke)}
+.facts dd{margin:0;font-weight:600}
+.facts .live{color:var(--gold)}
+
+/* section label */
+.label{
+  display:flex;align-items:center;gap:12px;
+  font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--gold);
+}
+.label::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* links */
+.links{display:flex;flex-direction:column;gap:12px;margin-top:-12px}
+.link{
+  display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:14px;
+  padding:14px 16px;background:var(--paper);border:1px solid var(--line);
+  color:var(--cream);text-decoration:none;
+  transition:border-color .2s, transform .2s, background .2s;
+}
+.link:hover{border-color:var(--gold);transform:translateX(-4px);background:#1d1a16}
+.link:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.ico{
+  width:48px;height:48px;display:grid;place-items:center;
+  background:var(--c);color:var(--ic,#0d0c0b);
+}
+.ico svg{width:24px;height:24px;fill:currentColor}
+.txt{min-width:0}
+.txt b{display:block;font-size:18px;font-weight:800;line-height:1.2}
+.txt span{display:block;color:var(--smoke);font-size:14px}
+.handle{font-family:var(--mono);font-size:12px;color:var(--smoke);direction:ltr}
+.arrow{color:var(--gold);font-size:20px;line-height:1}
+
+.foot{
+  text-align:center;font-size:13px;color:var(--smoke);
+  font-family:var(--mono);letter-spacing:.08em;
+}
+.foot b{color:var(--gold);font-weight:500}
+
+@media (prefers-reduced-motion:reduce){.link{transition:none}.link:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap" dir="rtl" lang="he">
+
+  <section class="file" aria-label="פרטי הדמות">
+    <div class="file-top">
+      <span>תיק מס׳ 0427-VM</span>
+      <span class="stamp">מבוקש</span>
+    </div>
+    <div class="mark" aria-hidden="true">VM</div>
+    <h1>ויטו מונטנה</h1>
+    <div class="latin">Vito Montana</div>
+    <p class="tag">המשפחה תמיד במקום הראשון. לייבים, קליפים ורגעים מהעיר, כל מה שצריך לדעת כדי למצוא אותי.</p>
+    <dl class="facts">
+      <dt>שם בפועל</dt><dd>SwiT</dd>
+      <dt>תפקיד</dt><dd>ראש המשפחה</dd>
+      <dt>נראה לאחרונה</dt><dd class="live">בלייב ב-Kick</dd>
+    </dl>
+  </section>
+
+  <div class="label">איפה תופסים אותי</div>
+
+  <nav class="links" id="links" aria-label="הרשתות שלי"></nav>
+
+  <div class="foot">ויטו מונטנה · <b>SwiT</b></div>
+</div>
+
+<script>
+/* ===== כאן מעדכנים את הלינקים ===== */
+const LINKS = [
+  { name:"Kick", desc:"שידורים חיים, כל הערב", url:"https://kick.com/switig", handle:"kick.com/switig",
+    color:"#53fc18", icon:'<path d="M3 3h6v5h2V6h2V4h2V3h6v6h-2v2h-2v2h2v2h2v6h-6v-1h-2v-2h-2v-2H9v5H3z"/>' },
+  { name:"YouTube", desc:"קליפים, הייליטס ופרקים מלאים", url:"https://www.youtube.com/@SwiTig", handle:"@SwiTig",
+    color:"#ff1f1f", ic:"#fff", icon:'<path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1z"/>' },
+  { name:"TikTok", desc:"הרגעים הכי חזקים בקצר", url:"https://www.tiktok.com/@swittiktok", handle:"@swittiktok",
+    color:"#efe6d4", icon:'<path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.3 6.3 0 1 0 5.4 6.2V8.6a7.9 7.9 0 0 0 4.4 1.4V6.6a4.5 4.5 0 0 1-4.4-4.6z"/>' },
+  { name:"Discord", desc:"הצטרפו למשפחה בשרת", url:"https://discord.gg/UVrpartaa", handle:"discord.gg/UVrpartaa",
+    color:"#5865f2", ic:"#fff", icon:'<path d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.6 19.6 0 0 0-4.9 1.5C.6 9.1-.3 13.7.1 18.2a19.8 19.8 0 0 0 6 3l1.3-2a12.8 12.8 0 0 1-2-1l.5-.4a14 14 0 0 0 12.2 0l.5.4-2 1 1.3 2a19.7 19.7 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.8zM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/>' }
+];
+
+const nav = document.getElementById("links");
+nav.innerHTML = LINKS.map(l => `
+  <a class="link" href="${l.url}" target="_blank" rel="noopener" style="--c:${l.color};${l.ic?`--ic:${l.ic}`:""}">
+    <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">${l.icon}</svg></span>
+    <span class="txt"><b>${l.name}</b><span>${l.desc}</span><span class="handle">${l.handle}</span></span>
+    <span class="arrow" aria-hidden="true">←</span>
+  </a>`).join("");
+</script>
+
+</body>
+</html>
